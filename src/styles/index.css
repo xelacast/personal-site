@@ -83,7 +83,8 @@ h1 {
 }
 
 h2 {
-  font-size: var(--mhl-sz);
+  font-size: var(--mhxl-sz);
+  font-weight: 600;
 }
 
 h3 {
