@@ -86,3 +86,93 @@ body {
   }
 }
 
+#hero {
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  .heroContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    font-size: $mobile-hero;
+    line-height: -2.2px;
+  }
+
+  .top {
+    color: $subtitle-col;
+  }
+
+  .heroIntro {
+    color: $sec-col;
+  }
+
+  .heroText {
+    width: 50%;
+    color: $text-col;
+    margin-top: 15px;
+  }
+
+  .heroButton {
+    width: 50%;
+    padding: 5px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: $sec-col;
+    transition: 0.2s;
+
+    a {
+      padding: 5px 20px;
+      text-decoration: none;
+      &:link,
+      &:visited {
+      color: $subtitle-col;
+  }
+    }
+
+    &:hover,
+    &:active {
+      background-color: $background-2;
+    }
+
+
+}
+
+
+
+
+
+
+  // @media screen and (min-width: 480px) {
+  //   width: 400px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    padding: 0;
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 900px;
+    h1 {
+      font-size: clamp(40px, 8vw, 80px) !important;
+    }
+
+    .heroButton {
+      width: 20%;
+    }
+  }
+
+  @media screent and (min-width: 1200px) {
+    width: 1000px;
+  }
+}
+
+
