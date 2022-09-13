@@ -1,12 +1,122 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: local("RobotoMono"),
+  url("../fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMonoItalic";
+  src: local("RobotoMonoItalic"),
+  url("../fonts/RobotoMono/RobotoMono-MediumItalic.ttf") format("truetype")
+}
+
+:root {
+  --background-col-light: #87AAE690;
+  --background-col-medium: #87AAE6;
+  --background-col-dark: #4B689990;
+  --secondary-col: #E6B693;
+  --secondary-hover-col: #F29B8F;
+  --subtitle-col: #FFFFFF;
+  --font-col: #D9D9D9;
+  --font-sans: Calibri, Inter, "sans-serif";
+  --font-mono: RobotoMono, "Courier New", "mono";
+  --h-sz: 80px;
+  --h-m-sz: 40px;
+  --hxl-sz: 60px;
+  --hl-sz: 40px;
+  --hm-sz: 24px;
+  --hs-sz: 20px;
+  --pl-sz: 18px;
+  --pm-sz: 16px;
+  --ps-sz: 14px;
+  --mh-sz: 40px;
+  --mhxl-sz: 32px;
+  --mhl-sz: 24px;
+  --mhm-sz: 20px;
+  --mhs-sz: 16px;
+  --mpl-sz: 16px;
+  --mpm-sz: 14px;
+  --mps-sz: 12px;
+}
+
 *,
-*:after,
-*:before {
-  box-sizing: border-box;
+*:before,
+*:after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--pl-sz);
+  font-family: var(--font-sans);
+  background-color: var(--background-col-medium);
+  line-height: 1.3;
+  font-weight: bold;
+  color: var(--font-col)
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-col);
+  display: block;
+}
+
+a:visited,
+a:link {
+  color: var(--font-col);
+}
+
+h1 {
+  font-size: clamp(40px, 8vw, 80px);
+  color: var(--subtitle-col);
+}
+
+h2 {
+  font-size: var(--mhl-sz);
+}
+
+h3 {
+  font-size: var(--mhs-sz);
+}
+
+span {
+  color: var(--secondary-col);
+}
+
+nav ul {
+  list-style: none;
   padding: 0;
 }
 
+.button {
+  color: (--subtitle-col);
+  background-color: var(--secondary-col);
+}
 
-body {
-  background-color: #87AAE6;
+.button:hover,
+.button:active {
+  background-color: #F29B8F;
+}
+
+#body {
+  padding: 0 4vw;
+  transition: 0.2s ease;
+}
+
+@media screen and (min-width: 768px) {
+  #body {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
 }
