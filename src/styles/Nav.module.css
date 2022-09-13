@@ -1,6 +1,8 @@
 .nav {
   margin: 50px auto;
-  padding: 0 50px;
+  padding: 0 4vw;
+  width: 100%;
+  transition: 0.2s ease;
 }
 
 ul.navBar {
@@ -45,4 +47,10 @@ ul.navBar {
 .button:hover,
 .button:active {
   background-color: #F29B8F;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 0 50px;
+  }
 }

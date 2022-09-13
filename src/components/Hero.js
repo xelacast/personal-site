@@ -1,14 +1,16 @@
+import styles from '../styles/Hero.module.css';
 const content = require('../content.json');
 
 const Hero = () => {
   return (
-    <section id="hero">
-      <div className="heroContainer">
-        <p class="heroIntro">{content.intro}</p>
-        <h1 class="hero top">{content.name}</h1>
-        <h1 class="hero bottom">{content.statement}</h1>
-        <p class="heroText">{content.heroText}</p>
+    <section id={styles.hero} className={styles.hero}>
+      <div className={styles.heroContainer}>
+        <p className={styles.intro}>Hi, My Name is...</p>
+        <h1 className={styles.heading}>Alexander Castillo.</h1>
+        <h1 className={styles.heading}>I Build things for the web.</h1>
+        <p className={styles.heroText}>A student specializing in building <em><span>full stack</span></em> web applications and experiences. I am currenlty focused on creating frontend user interfaces and backend systems with <em><span> professional styled</span></em> workflows.</p>
         <a
+        className={`${styles.projects}  ${styles.button}`}
         href="https://www.github.com/alexjohn7516"
         target="_blank"
         rel="noreferrer">

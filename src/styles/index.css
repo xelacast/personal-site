@@ -107,11 +107,14 @@ nav ul {
 }
 
 #body {
-  padding: 0 50px;
+  padding: 0 4vw;
+  transition: 0.2s ease;
 }
 
 @media screen and (min-width: 768px) {
-
+  #body {
+    padding: 0 50px;
+  }
 }
 
 @media screen and (min-width: 900px) {
