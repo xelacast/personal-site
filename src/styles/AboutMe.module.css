@@ -1,0 +1,94 @@
+#aboutme {
+  margin-top: 100px; /* TODO Remove this and fix the overflow issue*/
+
+}
+
+.container {
+  margin: 0 auto;
+  width: clamp(1000px, 700px 100%);
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.text > p {
+  padding: 10px 0;
+}
+
+.technologies > li:nth-child(0) {
+  grid-area: one;
+}
+.technologies > li:nth-child(1) {
+  grid-area: two;
+}
+.technologies > li:nth-child(2) {
+  grid-area: three;
+}
+.technologies > li:nth-child(3) {
+  grid-area: four;
+}
+.technologies > li:nth-child(4) {
+  grid-area: five;
+}
+.technologies > li:nth-child(5) {
+  grid-area: six;
+}
+
+.technologies {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(20px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "one two"
+    "three four"
+    "five six";
+  margin: 20px 0;
+}
+
+.technologies > li > div {
+  display: flex;
+  align-items: center;
+}
+
+.image > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.arrow > img {
+  height: 20px;
+  width: 20px;
+  transform: rotate(180deg);
+  display: block;
+}
+
+.portrait {
+  text-align: center;
+  margin-top: 2%;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .portrait
+  {
+    flex-basis: 40%;
+  }
+  .description {
+    flex-basis: 55%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+}

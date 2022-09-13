@@ -74,9 +74,12 @@ a:link {
   color: var(--font-col);
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   font-size: clamp(40px, 8vw, 80px);
-  color: var(--subtitle-col);
 }
 
 h2 {
@@ -85,6 +88,10 @@ h2 {
 
 h3 {
   font-size: var(--mhs-sz);
+}
+
+h1, h2, h3 {
+  color: var(--subtitle-col);
 }
 
 span {
@@ -114,6 +121,12 @@ nav ul {
 @media screen and (min-width: 768px) {
   #body {
     padding: 0 50px;
+  }
+  h1 {
+    font-size: var(--h-sz);
+  }
+  h2 {
+    font-size: var(--hl-sz);
   }
 }
 
