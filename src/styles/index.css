@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Inter";
   src: local("Inter"),
-  url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+  url("../assets/fonts/Inter/Inter-Regular.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "RobotoMono";
   src: local("RobotoMono"),
-  url("../fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+  url("../assets/fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "RobotoMonoItalic";
   src: local("RobotoMonoItalic"),
-  url("../fonts/RobotoMono/RobotoMono-MediumItalic.ttf") format("truetype")
+  url("../assets/fonts/RobotoMono/RobotoMono-MediumItalic.ttf") format("truetype")
 }
 
 :root {
@@ -74,17 +74,25 @@ a:link {
   color: var(--font-col);
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   font-size: clamp(40px, 8vw, 80px);
-  color: var(--subtitle-col);
 }
 
 h2 {
-  font-size: var(--mhl-sz);
+  font-size: var(--mhxl-sz);
+  font-weight: 600;
 }
 
 h3 {
   font-size: var(--mhs-sz);
+}
+
+h1, h2, h3 {
+  color: var(--subtitle-col);
 }
 
 span {
@@ -114,6 +122,12 @@ nav ul {
 @media screen and (min-width: 768px) {
   #body {
     padding: 0 50px;
+  }
+  h1 {
+    font-size: var(--h-sz);
+  }
+  h2 {
+    font-size: var(--hl-sz);
   }
 }
 

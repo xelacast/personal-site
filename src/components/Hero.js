@@ -1,5 +1,4 @@
 import styles from '../styles/Hero.module.css';
-const content = require('../content.json');
 
 const Hero = () => {
   return (
