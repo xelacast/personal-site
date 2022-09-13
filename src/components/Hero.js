@@ -1,4 +1,3 @@
-
 const content = require('../content.json');
 
 const Hero = () => {
@@ -9,14 +8,12 @@ const Hero = () => {
         <h1 class="hero top">{content.name}</h1>
         <h1 class="hero bottom">{content.statement}</h1>
         <p class="heroText">{content.heroText}</p>
-        <button className="heroButton">
-          <a
-          href="https://www.github.com/alexjohn7516"
-          target="_blank"
-          rel="noreferrer">
-            Check Out My Projects
-          </a>
-        </button>
+        <a
+        href="https://www.github.com/alexjohn7516"
+        target="_blank"
+        rel="noreferrer">
+          Check Out My Projects
+        </a>
       </div>
     </section>
   )
