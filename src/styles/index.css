@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Inter";
   src: local("Inter"),
-  url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+  url("../assets/fonts/Inter/Inter-Regular.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "RobotoMono";
   src: local("RobotoMono"),
-  url("../fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+  url("../assets/fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "RobotoMonoItalic";
   src: local("RobotoMonoItalic"),
-  url("../fonts/RobotoMono/RobotoMono-MediumItalic.ttf") format("truetype")
+  url("../assets/fonts/RobotoMono/RobotoMono-MediumItalic.ttf") format("truetype")
 }
 
 :root {
