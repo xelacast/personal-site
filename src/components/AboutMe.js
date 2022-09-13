@@ -25,8 +25,8 @@ const AboutMe = () => {
         <div className={styles.body}>
           <div className={styles.description}>
             <div className={styles.text}>
-              <p>I am a self-taught software enthusiast creating frontend, data driven products. My enjoyment for web development started when I took an online python EDx course to get ahead in school, I was hooked after that.</p>
-              <p>From that first moment of development I have learned many software languages and frameworks. My main focus is to learn professional workflows and build user interactable and data driven projects.</p>
+              <p>I am a self-taught software enthusiast creating frontend, full-stack data driven products. My enjoyment for web development started when I took an online python EDx course to get ahead in school, I was hooked after that.</p>
+              <p>My main focus is to learn professional workflows and build user interactable and data driven projects. I currently have <span>experience</span> working with a team in an <span>NFT startup</span>.</p>
               <p>My goal is to secure a career as a front end software developer, and further learn a backend development to satisfy my desire to learn.</p>
               <p>These are a few technologies I have been working with recently.</p>
             </div>
