@@ -12,16 +12,16 @@ export const projects = [
   },
   {
     title: "Reddit API Heatmap and Statistics",
-    description: "I was curious about reddit's user and subreddit data, so I created an " + <span> + "interactable dashboard" + </span> + ". This represents the best time to post on any given subreddit and the statistics of your Reddit profile.",
+    description: "I was curious about reddit's user and subreddit data, so I created an <span>interactable dashboard</span>. This represents the best time to post on any given subreddit and the statistics of your Reddit profile.",
     image: stock,
-    technologies: ["React", "Solidity", "Ethereuem", "Hardhat"],
+    technologies: ["Tailwind CSS","React", "Reddit API", "JavaScript", "Heroku"],
     github: "https://github.com/alexjohn7516/personal-site",
     url: "",
     type: "right"
   },
   {
     title: "Cutiee Fruitee NFT",
-    description: "A product to spread culteral awareness through technology built with React, Soldity, and Etheruem. ",
+    description: "A product to spread culteral awareness through blockchain technologies and their community. The MVP is live on my github. Built with <span>React</span>, <span>Soldity</span>, and <span>Etheruem</span>.",
     image: stock,
     technologies: ["React", "Solidity", "Ethereuem", "Hardhat"],
     github: "https://github.com/alexjohn7516/personal-site",

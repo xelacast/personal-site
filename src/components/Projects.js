@@ -1,8 +1,9 @@
 import styles from "../styles/Projects.module.css";
 import github from "../assets/icons/logo-github.svg"
 import externalLink from "../assets/icons/externallink.svg"
-
 import { projects } from "../assets/content/projects";
+
+import parse from 'html-react-parser';
 
 const Projects = () => {
   return (
@@ -20,7 +21,7 @@ const Projects = () => {
                     <div>
                       <h3><span>Featured Project</span></h3>
                       <h2>{project.title}</h2>
-                      <p>{project.description}</p>
+                      <p>{parse(project.description)}</p>
                       <ul className={styles.tech}>
                         {project.technologies.map((tech) => {
                           return (
