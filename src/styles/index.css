@@ -66,7 +66,7 @@ body {
 a {
   text-decoration: none;
   color: var(--font-col);
-  display: block;
+  display: inline-block;
 }
 
 a:visited,
@@ -83,12 +83,12 @@ h1 {
 }
 
 h2 {
-  font-size: var(--mhxl-sz);
+  font-size: clamp(24px, 5vw, 28px);
   font-weight: 600;
 }
 
 h3 {
-  font-size: var(--mhs-sz);
+  font-size: var(--mhl-sz);
 }
 
 h1, h2, h3 {
@@ -115,19 +115,22 @@ nav ul {
 }
 
 #body {
-  padding: 0 4vw;
+  padding: 0 50px;
   transition: 0.2s ease;
 }
 
 @media screen and (min-width: 768px) {
   #body {
-    padding: 0 50px;
+    padding: 0 100px;
   }
   h1 {
     font-size: var(--h-sz);
   }
   h2 {
     font-size: var(--hl-sz);
+  }
+  h3 {
+    font-size: var(--hm-sz);
   }
 }
 

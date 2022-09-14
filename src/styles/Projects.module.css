@@ -1,0 +1,145 @@
+#projects {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.imageWrapper > figure > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imageWrapper > figure {
+  height: auto;
+  max-width: 700px;
+
+}
+
+.tech li {
+  display: inline-block;
+}
+
+.liContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectContainer {
+  margin-bottom: 70px;
+}
+
+.left {
+  text-align: left;
+}
+
+.projectContent h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.projectContent p {
+  margin-bottom: 25px;
+}
+
+.projectContent ul {
+  margin-bottom: 25px;
+}
+
+.projectContent ul li {
+  padding: 0 5px;
+}
+
+.projectContent ul li:first-child {
+  padding-left: 0;
+}
+
+.projectContent .links a {
+  padding: 0 10px;
+  font-size: 1.2em;
+  color: var(--subtitle-col);
+}
+
+.projectContent .links a:first-child {
+  padding-left: 0px;
+}
+
+.projectImage {
+  opacity: 0.25;
+  z-index: -1;
+  margin-top: 20px;
+}
+
+.tech {
+  font-size: 90%;
+}
+
+@media screen and (min-width: 580px) {
+  .projectContainer {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .projectContent {
+    grid-column: 1 / -1;
+    grid-row-start: -1;
+    grid-row-end: 1;
+    padding: 40px 40px 30px;
+  }
+  .projectImage {
+    grid-column: 1 / -1;
+    height: 90%;
+    margin-top: 0;
+    grid-row-start: -1;
+    grid-row-end: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .right {
+    text-align: right;
+  }
+
+  .left.projectImage {
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+  }
+  .left.projectContent {
+    grid-area: 1 / 1 / -1 / 8;
+  }
+
+  .right.projectImage {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 8;
+
+  }
+  .right.projectContent {
+    grid-area: 1 / 6 / -1 / -1;
+
+  }
+
+  .projectContent {
+    padding: 0;
+  }
+
+  .projectContent p {
+    margin-bottom: 25px;
+    background-color: var(--background-col-dark);
+    padding: 25px;
+    border-radius: 10px;
+    /* max-height: 100px; */
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+}
