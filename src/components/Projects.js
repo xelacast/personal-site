@@ -10,7 +10,8 @@ const projects = [
     image: stock,
     technologies: ["React", "Solidity", "Ethereuem", "Hardhat"],
     github: "https://github.com/alexjohn7516/personal-site",
-    url: ""
+    url: "",
+    type: ""
   }
 ]
 
@@ -22,32 +23,43 @@ const Projects = () => {
           <h2><span>II.</span> Projects</h2>
         </div>
         <div>
-          {projects.map((project) => {
-            return (
-              <div className={styles.type}>
-                <h4><span>Featured Project</span></h4>
-                <h3>{project.title}</h3>
-                <div>
-                  <p>{project.description}</p>
-                </div>
-                <ul className={styles.tech}>
-                  {project.technologies.map((tech) => {
-                    return (
-                      <li>{tech}</li>
-                    )
-                  })}
-                </ul>
-                <div>
-                  <a href={project.github}>
-                    <ion-icon src={github}></ion-icon>
-                  </a>
-                  <a href={project.url}>
-                    <ion-icon src={externalLink}></ion-icon>
-                  </a>
-                </div>
-              </div>
-            )
-          })}
+          <ul className={styles.liContainer}>
+            {projects.map((project) => {
+              return (
+                <li className={`${styles[project.type]} ${styles.projectContainer}`}>
+                  <div className={styles.projectContent}>
+                    <h4><span>Featured Project</span></h4>
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <ul className={styles.tech}>
+                      {project.technologies.map((tech) => {
+                        return (
+                          <li>{tech}</li>
+                        )
+                      })}
+                    </ul>
+                    <div>
+                      <a href={project.github}>
+                        <ion-icon src={github}></ion-icon>
+                      </a>
+                      <a href={project.url}>
+                        <ion-icon src={externalLink}></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                  <div className={styles.projectImage}>
+                    <a href={project.url}>
+                      <div className={styles.imageWrapper}>
+                        <figure>
+                          <img src={project.image} alt={project.title} />
+                        </figure>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </div>
     </section>

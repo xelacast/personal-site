@@ -88,7 +88,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--mhs-sz);
+  font-size: var(--mhl-sz);
 }
 
 h1, h2, h3 {
@@ -128,6 +128,9 @@ nav ul {
   }
   h2 {
     font-size: var(--hl-sz);
+  }
+  h3 {
+    font-size: var(--hm-sz);
   }
 }
 

@@ -1,0 +1,21 @@
+.imageWrapper > figure > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imageWrapper > figure {
+  height: auto;
+  max-width: 700px;
+
+}
+
+.tech li {
+  display: inline-block;
+}
+
+.liContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
