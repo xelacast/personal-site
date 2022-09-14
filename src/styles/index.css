@@ -83,7 +83,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--mhxl-sz);
+  font-size: clamp(24px, 5vw, 28px);
   font-weight: 600;
 }
 
@@ -115,13 +115,13 @@ nav ul {
 }
 
 #body {
-  padding: 0 4vw;
+  padding: 0 50px;
   transition: 0.2s ease;
 }
 
 @media screen and (min-width: 768px) {
   #body {
-    padding: 0 50px;
+    padding: 0 100px;
   }
   h1 {
     font-size: var(--h-sz);
