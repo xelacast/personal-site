@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
@@ -9,8 +10,10 @@ import Socials from './components/Socials';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        < Nav />
+      <header className="App-header ">
+        <BrowserRouter>
+          < Nav />
+        </BrowserRouter>
       </header>
       <div id="body">
         <Hero />
