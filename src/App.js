@@ -13,12 +13,12 @@ function App() {
         < Nav />
       </header>
       <div id="body">
-        {/* <Hero /> */}
+        <Hero />
         <AboutMe />
-        {/* <Projects /> */}
-        {/* <MoreProjects /> */}
-        {/* <Contact /> */}
-        {/* <Socials /> */}
+        <Projects />
+        <MoreProjects />
+        <Contact />
+        <Socials />
       </div>
     </div>
   );
