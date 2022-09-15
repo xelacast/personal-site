@@ -19,7 +19,7 @@ const AboutMe = () => {
     <section id={styles.aboutme}>
       <div className={styles.container}>
         <div className={styles.heading}>
-          <h2><span>I.</span> About Me </h2>
+          <h3><span>I.</span> About Me </h3>
           {/* <Line /> */}
         </div>
         <div className={styles.body}>

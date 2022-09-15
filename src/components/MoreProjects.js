@@ -6,7 +6,7 @@ const MoreProjects = () => {
     <section id={styles.moreProjects}>
       <div>
         <div>
-          <h2 className={styles.heading}>More of My Works</h2>
+          <h3 className={styles.heading}>More of My Works</h3>
           <span className={styles.heading2}><a href="https://github.com/alexjohn7516?tab=repositories">
               <p>
                 Check them out
@@ -22,7 +22,7 @@ const MoreProjects = () => {
                     href={project.url}
                     className={styles.projectLink}>
                     <div className={styles.linkBody}>
-                      <h3>{project.title}</h3>
+                      <h4>{project.title}</h4>
                       <hr></hr>
                       <p>{project.description}</p>
                     </div>
