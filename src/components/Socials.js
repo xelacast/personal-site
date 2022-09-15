@@ -20,15 +20,13 @@ const Socials = () => {
         </ul>
       </div>
       <div className={styles.emailContainer}>
-        <ul className={styles.links}>
-          <li className={styles.link}>
-            <a
-            href="mailto: alex.jc7516@gmail.com"
-            className={styles.email}>
-              alex.jc7516@gmail.com
-            </a>
-          </li>
-        </ul>
+        <div>
+          <a
+          href="mailto: alex.jc7516@gmail.com"
+          className={styles.email}>
+            alex.jc7516@gmail.com
+          </a>
+        </div>
       </div>
     </section>
   )

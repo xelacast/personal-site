@@ -28,44 +28,50 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
   }
 
-  .link a {
+  #socials a {
     font-size: 1.6em;
     transition: all 0.2s ease;
   }
 
-  .link a:hover {
+  #socials a:hover {
     color: var(--secondary-col);
+    translate: 0 -3px;
   }
 
   .link {
     display: inline-block;
   }
 
-  /* .email {
-    transform: rotate(90deg);
-  } */
-
-  .emailContainer > .links > .link {
-    /* width: 50px; */
+  .link:first-child {
+    margin-bottom: 15px;
   }
 
-  .link:last-child::after {
+  .link:last-child::after,
+  .emailContainer > div::after {
     content: "";
-    display: block;
     width: 2px;
     height: 130px;
     margin: 15px auto 0 auto;
     background-color: var(--font-col);
   }
+  .link:last-child::after {
+    display: block;
+  }
+
+  .emailContainer > div::after {
+    display: block;
+  }
+
   .email {
     writing-mode: vertical-lr;
     letter-spacing: .1px;
     font-size: 1em !important;
-    margin: 0 0 10px 4px;
+    margin: 0 0 10px 3px;
+    padding: 0px 7px;
   }
+
 }
 
 
