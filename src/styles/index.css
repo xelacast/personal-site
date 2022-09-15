@@ -80,11 +80,13 @@ li {
 
 h1 {
   font-size: clamp(40px, 8vw, 80px);
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: clamp(24px, 5vw, 28px);
+  font-size: clamp(36px, 6vw, 74px);
   font-weight: 600;
+  line-height: .9;
 }
 
 h3 {
@@ -123,7 +125,7 @@ nav ul {
   #body {
     padding: 0 100px;
   }
-  h1 {
+  /* h1 {
     font-size: var(--h-sz);
   }
   h2 {
@@ -131,7 +133,7 @@ nav ul {
   }
   h3 {
     font-size: var(--hm-sz);
-  }
+  } */
 }
 
 @media screen and (min-width: 900px) {
