@@ -1,8 +1,3 @@
-#aboutme {
-  margin-top: 100px; /* TODO Remove this and fix the overflow issue*/
-
-}
-
 .container {
   margin: 0 auto;
   width: clamp(1000px, 700px 100%);
@@ -66,8 +61,6 @@
 }
 
 .portrait {
-  /* text-align: center; */
-  /* margin-top: 2%; */
   max-width: 300px;
   margin: 2% auto 0 auto;
 }
