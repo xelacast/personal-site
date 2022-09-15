@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import MoreProjects from './components/MoreProjects';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
+import Socials from './components/Socials';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Projects />
         <MoreProjects />
         <Contact />
+        <Socials />
       </div>
     </div>
   );

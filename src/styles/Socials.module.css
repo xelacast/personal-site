@@ -1,0 +1,79 @@
+#socials {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #socials {
+    display: block;
+  }
+
+  .linkContainer {
+    position: fixed;
+    left: 30px;
+    bottom: 0px;
+    width: 40px;
+    right: auto;
+  }
+
+  .emailContainer {
+    position: fixed;
+    right: 30px;
+    bottom: 0px;
+    width: 40px;
+    left: auto;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .link a {
+    font-size: 1.6em;
+    transition: all 0.2s ease;
+  }
+
+  .link a:hover {
+    color: var(--secondary-col);
+  }
+
+  .link {
+    display: inline-block;
+  }
+
+  /* .email {
+    transform: rotate(90deg);
+  } */
+
+  .emailContainer > .links > .link {
+    /* width: 50px; */
+  }
+
+  .link:last-child::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 130px;
+    margin: 15px auto 0 auto;
+    background-color: var(--font-col);
+  }
+  .email {
+    writing-mode: vertical-lr;
+    letter-spacing: .1px;
+    font-size: 1em !important;
+    margin: 0 0 10px 4px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .linkContainer {
+    left: 55px;
+  }
+  .emailContainer {
+    right: 55px;
+  }
+}
