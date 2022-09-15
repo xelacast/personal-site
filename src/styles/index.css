@@ -80,18 +80,29 @@ li {
 
 h1 {
   font-size: clamp(40px, 8vw, 80px);
+  line-height: 1.1;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: clamp(24px, 5vw, 28px);
+  font-size: clamp(32px, 6vw, 60px);
   font-weight: 600;
+  line-height: .9;
 }
 
 h3 {
-  font-size: var(--mhl-sz);
+  font-size: clamp(24px, 5vw, 40px);
 }
 
-h1, h2, h3 {
+h4 {
+  font-size: clamp(22px, 4vw, 32px);
+}
+
+h5 {
+  font-size: clamp(20px ,3vw, 24px)
+}
+
+h1, h2, h3, h4, h5, h6 {
   color: var(--subtitle-col);
 }
 
@@ -123,17 +134,4 @@ nav ul {
   #body {
     padding: 0 100px;
   }
-  h1 {
-    font-size: var(--h-sz);
-  }
-  h2 {
-    font-size: var(--hl-sz);
-  }
-  h3 {
-    font-size: var(--hm-sz);
-  }
-}
-
-@media screen and (min-width: 900px) {
-
 }

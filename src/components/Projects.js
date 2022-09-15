@@ -10,7 +10,7 @@ const Projects = () => {
     <section id={styles.projects}>
       <div className={styles.container}>
         <div className={styles.heading}>
-          <h2><span>II.</span> Projects</h2>
+          <h3><span>II.</span> Projects</h3>
         </div>
         <div>
           <ul className={styles.liContainer}>
@@ -19,8 +19,8 @@ const Projects = () => {
                 <li className={styles.projectContainer}>
                   <div className={`${styles[project.type]} ${styles.projectContent}`}>
                     <div>
-                      <h3><span>Featured Project</span></h3>
-                      <h2>{project.title}</h2>
+                      <h5><span>Featured Project</span></h5>
+                      <h4>{project.title}</h4>
                       <p>{parse(project.description)}</p>
                       <ul className={styles.tech}>
                         {project.technologies.map((tech) => {
