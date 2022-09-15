@@ -1,11 +1,15 @@
 .nav {
-  margin: 0 auto;
-  padding: 50px 50px 0;
+  padding: 0 25px;
   width: 100%;
   position: fixed;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
+  flex-basis: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -29,7 +33,7 @@
   color: var(--secondary-col);
   background: none;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.4s ease;
 }
 
 .burger:global(.opened) {
@@ -49,7 +53,7 @@
   top: 0;
 }
 .linkContainer {
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   position: fixed;
   z-index: 11;
   height: 100vh;
@@ -65,9 +69,16 @@
   padding: 15px 0;
   text-align: center;
 }
+.link > a {
+  color: var(--subtitle-col) !important;
+  transition: all 0.2s ease;
+}
+
+.link > a:hover {
+  color: var(--secondary-col) !important;
+}
 
 .button {
-  color: var(--subtitle-col) !important;
   background-color: var(--secondary-col);
   padding: 5px 25px;
   border-radius: 5px;
@@ -81,6 +92,10 @@
   border: 2px solid var(--secondary-col);
 }
 
+.logo:hover {
+  fill: var(--secondary-hover-col);
+}
+
 @media screen and (min-width: 400px) {
   .linkContainer {
     width: 300px;
@@ -89,7 +104,7 @@
 
 @media screen and (min-width: 768px) {
   .nav {
-    padding: 50px 100px 0;
+    padding: 0 50px;
   }
 
   .linkContainer {
