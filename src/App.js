@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header ">
         <BrowserRouter>
-          < Nav />
+          <Nav />
         </BrowserRouter>
       </header>
       <div id="body">
