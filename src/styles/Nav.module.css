@@ -1,8 +1,12 @@
+:global(#nav) {
+  background-color: var(--background-col-light) !important;
+}
+
 .nav {
   padding: 0 25px;
   width: 100%;
   position: fixed;
-  height: 125px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
