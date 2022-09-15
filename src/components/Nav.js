@@ -1,14 +1,12 @@
 import styles from "../styles/Nav.module.css"
 import burgerIcon from '../assets/icons/align-right.svg';
 import droplet from '../assets/icons/droplet.svg';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 const Nav = () => {
 
   const [menu, setMenu] = useState("hidden");
   const [burger, setBurger] = useState("closed");
-  const [lastScroll, setLastScroll] = useState();
-  const [navHide, setNavHide] = useState("open");
 
   const toggleBurger = () => {
     console.log(menu)
@@ -25,26 +23,8 @@ const Nav = () => {
     }
   }
 
-  const handleScoll = () => {
-    console.log('inside scroll')
-    let scroll = window.scrollY;
-    if (scroll > lastScroll) {
-      setNavHide("close")
-    } else {
-      setNavHide("open")
-    }
-    setLastScroll(scroll)
-  }
-
-  // useEffect(() => {
-  //   const handleScroll = (event) => {
-
-  //     document.scrollY
-  //   }
-  // }, [])
-
   return (
-    <nav id="nav" className={`${navHide} ${styles.nav}`}>
+    <nav id="nav" className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="#hero">
