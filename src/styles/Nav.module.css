@@ -1,56 +1,141 @@
+:global(#nav) {
+  background-color: var(--background-col-light) !important;
+}
+
 .nav {
-  margin: 50px auto;
-  padding: 0 4vw;
+  padding: 0 25px;
   width: 100%;
-  transition: 0.2s ease;
-}
-
-ul.navBar {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.navLinks {
-  padding: 0;
+  position: fixed;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style-type: none;
-  flex-direction: row;
 }
 
-.navLink {
-  padding: 0 15px;
-  font-size: var(--hs-sz);
+.container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navLinks > .navLink:first-child {
-  margin-right: auto;
-  margin-left: 0;
-  padding-left: 0;
+.logo a {
+  color: var(--secondary-col) !important;
 }
 
-.navLinks > .navLink:last-child {
-  margin-right: 0;
-  padding-right: 0;
+.logo,
+.burger {
+  font-size: 3em;
+  position: relative;
+  z-index: 14;
+}
+
+.burger {
+  text-align: right;
+  position: relative;
+  z-index: 100;
+  border: none;
+  color: var(--secondary-col);
+  background: none;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.burger:global(.opened) {
+  transform: scale(2);
+}
+
+
+:global(.visible) {
+  right: 0;
+  top: 0;
+  box-shadow: 0 0 1000px 1000px #4B689990 ;
+  opacity: 1;
+}
+
+:global(.hidden) {
+  right: -300px;
+  top: 0;
+}
+.linkContainer {
+  transition: all 0.4s ease;
+  position: fixed;
+  z-index: 11;
+  height: 100vh;
+  background-color: var(--background-col-dark);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  font-size: 140%;
+  padding: 15px 0;
+  text-align: center;
+}
+.link > a {
+  color: var(--subtitle-col) !important;
+  transition: all 0.2s ease;
+}
+
+.link > a:hover {
+  color: var(--secondary-col) !important;
 }
 
 .button {
-  color: (--subtitle-col) !important;
   background-color: var(--secondary-col);
-  /* background-color: black ; */
   padding: 5px 25px;
   border-radius: 5px;
   transition: all 0.2s ease;
+  border: 2px solid var(--secondary-col);
 }
 
 .button:hover,
 .button:active {
-  background-color: #F29B8F;
+  background-color: var(--background-col-light);
+  border: 2px solid var(--secondary-col);
+}
+
+.logo:hover {
+  fill: var(--secondary-hover-col);
+}
+
+@media screen and (min-width: 400px) {
+  .linkContainer {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .nav {
     padding: 0 50px;
+  }
+
+  .linkContainer {
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    display: block;
+    font-size: 1;
+    transition: none;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+
+  .link {
+    margin: 0 20px;
+    font-size: inherit;
+  }
+
+  .link:last-child {
+    margin-right: 0;
+  }
+
+  .burger {
+    display: none;
   }
 }
