@@ -1,6 +1,6 @@
 import styles from '../styles/Contact.module.css';
 import github from '../assets/icons/logo-github.svg';
-import linkedIn from '../assets/icons/linkedin.svg';
+import linkedIn from '../assets/icons/linkedin-square.svg';
 const Contact = () => {
   return (
     <section id={styles.contact}>
