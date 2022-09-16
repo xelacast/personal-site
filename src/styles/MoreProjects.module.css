@@ -1,11 +1,9 @@
-#moreProjects {
+:global(#more-projects) {
   max-width: 900px;
   margin: 200px auto 0 auto;
 }
 
 .projectBody {
-  /* padding: 25px; */
-  /* display: inline-block; */
   min-height: 225px;
   width: 225px;
   background-color: var(--background-col-dark);

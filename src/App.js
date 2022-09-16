@@ -11,9 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header ">
-        <BrowserRouter>
-          <Nav />
-        </BrowserRouter>
+        <Nav />
       </header>
       <div id="body">
         <Hero />

@@ -7,7 +7,7 @@ import parse from 'html-react-parser';
 
 const Projects = () => {
   return (
-    <section id={styles.projects}>
+    <section id="projects">
       <div className={styles.container}>
         <div className={styles.heading}>
           <h3><span>II.</span> Projects</h3>

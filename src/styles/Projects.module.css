@@ -1,4 +1,4 @@
-#projects {
+:global(#projects) {
   max-width: 1000px;
   margin: 200px auto 0 auto;
 }
@@ -136,10 +136,5 @@
     background-color: var(--background-col-dark);
     padding: 25px;
     border-radius: 10px;
-    /* max-height: 100px; */
   }
-}
-
-@media screen and (min-width: 1000px) {
-
 }

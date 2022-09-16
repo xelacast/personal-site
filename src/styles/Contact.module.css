@@ -1,5 +1,4 @@
-#contact {
-  /* text-align: center; */
+:global(#contact) {
   max-width: 800px;
   margin: 200px auto 25px auto;
 }

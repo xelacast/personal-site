@@ -3,7 +3,7 @@ import github from '../assets/icons/logo-github.svg';
 import linkedIn from '../assets/icons/linkedin-square.svg';
 const Contact = () => {
   return (
-    <section id={styles.contact}>
+    <section id="contact">
       <div className={styles.container}>
         <div className={styles.description}>
           <span>III. What's Next?</span>
