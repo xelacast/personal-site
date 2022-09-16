@@ -1,5 +1,5 @@
 import styles from "../styles/AboutMe.module.css";
-import arrow from "../assets/icons/arrow.svg";
+import arrow from "../assets/icons/arrow-right.svg";
 import self from "../assets/images/self-portrait-min.jpg";
 
 const AboutMe = () => {
@@ -35,9 +35,9 @@ const AboutMe = () => {
                 {technologies.map((tech) => {
                   return (
                     <li>
-                      <div>
+                      <div className={styles.iconContainer}>
                         <span className={styles.arrow}>
-                          <img src={arrow} alt="arrow poiting right" />
+                          <ion-icon src={arrow} alt="arrow poiting right"></ion-icon>
                         </span>
                         <p>{tech}</p>
                       </div>
