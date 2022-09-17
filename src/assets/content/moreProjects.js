@@ -1,8 +1,8 @@
 export const moreProjects = [
   {
-    title: "Scalping Bot",
-    description: "Scalping bot with maximum ML skills to pull any data",
-    url: "https://www.google.com",
+    title: "Social Media",
+    description: "A full stack social media application built with Python, Django, SQLite, HTML5, CSS3",
+    url: "https://github.com/alexjohn7516/mini-social-media",
   },
   {
     title: "Coming Soon",

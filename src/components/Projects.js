@@ -16,7 +16,7 @@ const Projects = () => {
           <ul className={styles.liContainer}>
             {projects.map((project) => {
               return (
-                <li className={styles.projectContainer}>
+                <li className={styles.projectContainer} key={project.title}>
                   <div className={`${styles[project.type]} ${styles.projectContent}`}>
                     <div>
                       <h5><span>Featured Project</span></h5>

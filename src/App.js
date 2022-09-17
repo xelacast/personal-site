@@ -1,4 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
