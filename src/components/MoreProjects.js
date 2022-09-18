@@ -14,9 +14,9 @@ const MoreProjects = () => {
       </div>
       <div className={styles.projectBk}>
         <ul className={styles.container}>
-          {moreProjects.map((project) => {
+          {moreProjects.map((project, i) => {
             return (
-              <li className={styles.projectBody}>
+              <li className={styles.projectBody} key={i}>
                 <a
                   href={project.url}
                   className={styles.projectLink}>

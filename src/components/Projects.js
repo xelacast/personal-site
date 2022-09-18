@@ -25,7 +25,7 @@ const Projects = () => {
                       <ul className={styles.tech}>
                         {project.technologies.map((tech) => {
                           return (
-                            <li>{tech}</li>
+                            <li key={tech}>{tech}</li>
                           )
                         })}
                       </ul>
