@@ -7,7 +7,7 @@ import parse from 'html-react-parser';
 
 const Projects = () => {
   return (
-    <section id={styles.projects}>
+    <section id="projects">
       <div className={styles.container}>
         <div className={styles.heading}>
           <h3><span>II.</span> Projects</h3>
@@ -16,7 +16,7 @@ const Projects = () => {
           <ul className={styles.liContainer}>
             {projects.map((project) => {
               return (
-                <li className={styles.projectContainer}>
+                <li className={styles.projectContainer} key={project.title}>
                   <div className={`${styles[project.type]} ${styles.projectContent}`}>
                     <div>
                       <h5><span>Featured Project</span></h5>

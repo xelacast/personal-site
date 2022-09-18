@@ -21,6 +21,7 @@
   --background-col-light: #87AAE690;
   --background-col-medium: #87AAE6;
   --background-col-dark: #4B6899;
+  --background-col-dark-opac: #4B689990;
   --secondary-col: #E6B693;
   --secondary-hover-col: #E6B69390;
   --subtitle-col: #FFFFFF;
@@ -44,6 +45,10 @@
   --mpl-sz: 16px;
   --mpm-sz: 14px;
   --mps-sz: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *,
@@ -127,6 +132,10 @@ nav ul {
 
 #body {
   padding: 0 50px;
+  transition: 0.2s ease;
+}
+
+#hero {
   transition: 0.2s ease;
 }
 

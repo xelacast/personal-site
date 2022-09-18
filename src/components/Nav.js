@@ -2,7 +2,6 @@ import styles from "../styles/Nav.module.css"
 import burgerIcon from '../assets/icons/align-right.svg';
 import droplet from '../assets/icons/droplet.svg';
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 const Nav = () => {
 
   const [menu, setMenu] = useState("hidden");
@@ -42,28 +41,28 @@ const Nav = () => {
           <div className={`${menu} ${styles.linkContainer}`}>
             <ul className={styles.links}>
               <li className={styles.link}>
-                <NavLink to="#about">
+                <a href="#about">
                   <span className={styles.roman}>I.</span> About
-                </NavLink>
+                </a>
               </li>
               <li className={styles.link}>
-                <NavLink to="#projects">
+                <a href="#projects">
                   <span className={styles.roman}>II.</span> Projects
-                </NavLink>
+                </a>
               </li>
               <li className={styles.link}>
-                <NavLink to="#contact">
+                <a href="#contact">
                   <span className={styles.roman}>III.</span> Contact
-                </NavLink>
+                </a>
               </li>
               <li className={styles.link}>
-                <NavLink
-                  to="resume.pdf"
+                <a
+                  href="resume.pdf"
                   target="_blank"
                   className={`${styles.resume} ${styles.button}`}
                   >
                   Resume
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>
