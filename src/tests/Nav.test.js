@@ -1,15 +1,6 @@
 import { render, fireEvent, screen, cleanup} from '@testing-library/react';
 import Nav from '../components/Nav';
 
-const resiseWindow = (x, y) => {
-  window.innerHeight = y;
-  window.innerWidth = x;
-  window.dispatchEvent(new Event("resize"));
-}
-
-beforeEach(() => {
-})
-
 it("Checks accuracy HREF of NAV links", () => {
 
   render(<Nav />);
@@ -18,22 +9,39 @@ it("Checks accuracy HREF of NAV links", () => {
   const projects = screen.getByText("Projects");
   const contact = screen.getByText("Contact");
   const resume = screen.getByText("Resume");
-  // const hero = screen.getByText("logo");
+  const hero = screen.getByTitle("logo");
 
   expect(about.getAttribute("href")).toEqual("#about");
   expect(projects.getAttribute("href")).toEqual("#projects");
   expect(contact.getAttribute("href")).toEqual("#contact");
   expect(resume.getAttribute("href")).toEqual("resume.pdf");
-  // expect(hero.getAttribute("href")).toEqual("#hero");
+  expect(hero.getAttribute("href")).toEqual("#hero");
 
   cleanup();
 
 })
 
-test("Tests mobile navigation menu.", () => {
+test("Opens and closes mobile navigation menu button.", () => {
   render(<Nav />);
 
-  resiseWindow(750, 1000);
+  const clickable = screen.getByRole('button');
+  const menu = screen.getByTitle("menu");
 
-  const clickable = screen.getByRole('button', {name: "burger"});
+  expect(menu.className).toEqual("hidden linkContainer");
+  expect(menu.hasAttribute("class")).toEqual(true);
+
+  expect(clickable.getAttribute("name")).toEqual("burger");
+  expect(clickable.className).toEqual("burger closed");
+
+  fireEvent.click(clickable);
+
+  expect(clickable.className).toEqual("burger opened");
+  expect(menu.className).toEqual("visible linkContainer");
+
+  fireEvent.click(clickable);
+
+  expect(clickable.className).toEqual("burger closed");
+  expect(menu.className).toEqual("hidden linkContainer");
+
+  cleanup()
 })
