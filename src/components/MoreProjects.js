@@ -18,6 +18,7 @@ const MoreProjects = () => {
             return (
               <li className={styles.projectBody} key={i}>
                 <a
+                  title="project"
                   href={project.url}
                   className={styles.projectLink}>
                   <div className={styles.linkBody}>

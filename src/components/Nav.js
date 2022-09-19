@@ -26,19 +26,23 @@ const Nav = () => {
     <nav id="nav" className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href="#hero">
+          <a href="#hero" title="logo">
             <ion-icon src={droplet}></ion-icon>
           </a>
         </div>
         <div className={styles.menu}>
           <div>
             <button
+              type="button"
+              name="burger"
               onClick={toggleBurger}
               className={`${styles.burger} ${burger}`}>
                 <ion-icon src={burgerIcon}></ion-icon>
             </button>
           </div>
-          <div className={`${menu} ${styles.linkContainer}`}>
+          <div
+            className={`${menu} ${styles.linkContainer}`}
+            title="menu">
             <ul className={styles.links}>
               <li className={styles.link}>
                 <a href="#about">
