@@ -1,4 +1,4 @@
-import { screen, render, cleanup, fireEvent } from "@testing-library/react";
+import { screen, render, cleanup } from "@testing-library/react";
 import Hero from "../components/Hero";
 
 test('Hero Button', () => {
