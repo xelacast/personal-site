@@ -11,6 +11,7 @@
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .imageWrapper > figure {
@@ -144,5 +145,10 @@
     background-color: var(--background-col-dark-opac);
     padding: 25px;
     border-radius: 10px;
+  }
+
+  .imageWrapper {
+    max-height: 600px;
+    overflow: hidden;
   }
 }
