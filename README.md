@@ -1,7 +1,7 @@
 # How I worked on this project
 My goal was to build a portfolio website to show off my experience and to simulate a professional work environment.
 
-* I built this app based on Figma Designs. The designs were heavily influenced by [Brittany Chiang's website](https://brittanychiang.com/). These are the Figma Designs: [Figma Mobile and Desktop Designs](./src//assets//pdf/Portfolio%20Page%20UI_UX.pdf).
+* I built this app based on Figma Designs. The designs were heavily influenced by [Brittany Chiang's website](https://brittanychiang.com/). These are the Figma Designs: [Figma Mobile and Desktop Designs](https://drive.google.com/file/d/1E6GnKt8APlSZeSKQO9tbnDWMY33TYZlk/view?usp=sharing).
 * I Created a Software Development Lifecycle through google docs: [SDLC](https://docs.google.com/document/d/1s22lk-YGSzNiIAYk3X1V5GO2QOzCf2eiTrnUFxmTsJo/edit?usp=sharing).
 * I used gitflow workflow with two long lasting branches: Main and Development; Short Lived branches for features, hotfixes, refactoring, and touch-ups. Implemented Pull Requests on every major change and incorporated issues: [Example PR](https://github.com/alexjohn7516/personal-site/pull/13) #13 [Example Issue](https://github.com/alexjohn7516/personal-site/issues/19)
 
