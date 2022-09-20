@@ -26,3 +26,6 @@ My goal was to build a portfolio website to show off my experience and to simula
 * Plan Styles, Linter, UI kit, and be more descriptive in your SDLC writeup.
 * Have a format for your commits, PRs, and branches.
 * Create a styling format.
+
+# The Lifecycle of this project
+Over time I will add to this project. I will add work experience section, more animations, and potentially refactor my codebase depending on how I am feeling. This project is open for anyone to add to or use. All I ask for is to give me and Brittany Chiang credit somewhere in your project.
