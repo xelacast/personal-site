@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# How I worked on this project
+My goal was to build a portfolio website to show off my experience and to simulate a professional work environment.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* I built this app based on Figma Designs. The designs were heavily influenced by [Brittany Chiang's website](https://brittanychiang.com/). These are the Figma Designs: [Figma Mobile and Desktop Designs](./src//assets//pdf/Portfolio%20Page%20UI_UX.pdf).
+* I Created a Software Development Lifecycle through google docs: [SDLC](https://docs.google.com/document/d/1s22lk-YGSzNiIAYk3X1V5GO2QOzCf2eiTrnUFxmTsJo/edit?usp=sharing).
+* I used gitflow workflow with two long lasting branches: Main and Development; Short Lived branches for features, hotfixes, refactoring, and touch-ups. Implemented Pull Requests on every major change and incorporated issues: [Example PR](https://github.com/alexjohn7516/personal-site/pull/13) #13 [Example Issue](https://github.com/alexjohn7516/personal-site/issues/19)
 
-## Available Scripts
+# How to navigate this project
+* The website is hosted at [Domain Name](Domain)
+* CSS style Modules to create mobile responsive components: [Nav Bar CSS Module and Media Queries](https://github.com/alexjohn7516/personal-site/blob/development/src/styles/Nav.module.css)
+* Implemented @testing-library/react with Jest for functional Testing on outgoing links: [Example Test](https://github.com/alexjohn7516/personal-site/blob/development/src/tests/MorePojects.test.js)
 
-In the project directory, you can run:
+# Why I built this projects this way
+* I used React because I wanted to get more familiar with the framework. I could have used Vanilla JS to save on the size of the app.
+* I did not use any state management libraries because the application held state for one component. If I did use state I would use react context or react query because I am learning companies are shying away from it and most small applications can use React Context or React Query with no problem.
+* Professional workflows, styling, and SDLC are essential while working with a team. I wanted to learn and practice what a professional workflow feels like and have gained new knowledge to create github workflows and the use of Pull Requests. I will say I am no way an expert yet and I could improve on many aspects of titling commits, issues, PRs, and branches.
+* Following company created designs is essential to building an application to standards. I created designs in Figma but I did not follow them to 100%, I was adding new features and animations to the app throughout development. In a Professional setting I do not have direct say what goes where, only suggestions.
+* Testing is an essential part of the development process, it finds bugs and creates assurance that the product will work how it is intended.
 
-### `npm start`
+# If I had more time I would change this
+* I would have an appropriate style guide and linter.
+* I would have created a UI kit before I started to make development easier and keep one source of truth. I repeated myself a few times in CSS with buttons and styling: [Example repeated 3 times (Hero, Nav, and Contact)](https://github.com/alexjohn7516/personal-site/blob/development/src/styles/Hero.module.css).
+* Setup Continuous Integration with github actions and checked styles with ESLint on every pull request.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# What I learned and what I could do better at
+* Plan Styles, Linter, UI kit, and be more descriptive in your SDLC writeup.
+* Have a format for your commits, PRs, and branches.
+* Create a styling format.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# The Lifecycle of this project
+Over time I will add to this project. I will add work experience section, more animations, and potentially refactor my codebase depending on how I am feeling. This project is open for anyone to add to or use. All I ask for is to give me and Brittany Chiang credit somewhere in your project.
