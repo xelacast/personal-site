@@ -21,6 +21,7 @@ My goal was to build a portfolio website to show off my experience and to simula
 * I would have an appropriate style guide and linter.
 * I would have created a UI kit before I started to make development easier and keep one source of truth. I repeated myself a few times in CSS with buttons and styling: [Example repeated 3 times (Hero, Nav, and Contact)](https://github.com/alexjohn7516/personal-site/blob/development/src/styles/Hero.module.css).
 * Setup Continuous Integration with github actions and checked styles with ESLint on every pull request.
+* Use Next.js to help with first page render to optimize SEO for site traction.
 
 # What I learned and what I could do better at
 * Plan Styles, Linter, UI kit, and be more descriptive in your SDLC writeup.
