@@ -7,12 +7,15 @@ const AboutMe = () => {
 
   const technologies =
     [
-      "JavaScript (ES6+)",
+      "TypeScript",
       "Python",
       "React",
+      "NEXT.js",
       "Node.js",
-      "Django",
-      "SQL"
+      "Express",
+      "AWS",
+      "Azure",
+      "MangoDB"
   ];
 
   return (
@@ -24,15 +27,21 @@ const AboutMe = () => {
         <div className={styles.body}>
           <div className={styles.description}>
             <div className={styles.text}>
-              <p>I am a self-taught software enthusiast creating frontend,
-                full-stack data driven products. My enjoyment for web
-                development started when I took an online python EDx course
-                to get ahead in school, I was hooked after that.</p>
-              <p>My main focus is to learn professional workflows and
-                build user interactable and data driven projects. I currently
-                have <span>experience</span> working with a team in an <span>NFT startup</span>.</p>
-              <p>My goal is to secure a career as a front end software developer,
-                and further learn a backend development to satisfy my desire to learn.</p>
+              <p>I am a self-taught software enthusiast creating frontend and
+                full-stack products with a years worth of freelance development
+                experience.
+              </p>
+              {/* <p>My enjoyment for web development started when
+                I took an online python EDx course
+                to get ahead in school, I was hooked after that.</p> */}
+              <p>
+                My main focus is to learn industry standards and project workflows
+                to build career worthy skills. I have <span>experience</span> in
+                creating <span>full stack applications</span> from the ground up
+                in the Blockchain space and with the <span>MERN</span> Stack.</p>
+              <p>My goal is to secure a career as a fullstack software developer
+                with an innovative company and further down the road create my own business
+              </p>
               <p>These are a few technologies I have been working with recently.</p>
             </div>
             <div>

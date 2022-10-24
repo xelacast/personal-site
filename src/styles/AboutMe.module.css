@@ -11,33 +11,48 @@
   padding: 10px 0;
 }
 
-.technologies > li:nth-child(0) {
-  grid-area: one;
-}
 .technologies > li:nth-child(1) {
-  grid-area: two;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 .technologies > li:nth-child(2) {
-  grid-area: three;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 .technologies > li:nth-child(3) {
-  grid-area: four;
+  grid-row: 3/4;
+  grid-column: 1/2;
 }
 .technologies > li:nth-child(4) {
-  grid-area: five;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 .technologies > li:nth-child(5) {
-  grid-area: six;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.technologies > li:nth-child(6) {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.technologies > li:nth-child(7) {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.technologies > li:nth-child(8) {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.technologies > li:nth-child(9) {
+  grid-row: 3/4;
+  grid-column: 3/4;
 }
 
 .technologies {
   display: inline-grid;
-  grid-template-columns: repeat(2, minmax(20px, 1fr));
+  grid-template-columns: repeat(3, minmax(20px, 1fr));
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "four two"
-    "five three"
-    "one six";
+  gap: .5rem 3rem;
   margin: 20px 0;
 }
 
