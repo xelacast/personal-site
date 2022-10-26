@@ -1,6 +1,6 @@
 import nft from "../images/nft-site.JPG";
 import reddit from '../images/redditprojectvisual.JPG';
-import portfolio from '../images/PersonalWebVisual.JPG'
+import portfolio from '../images/pwv.JPG'
 export const projects = [
   {
     title: "Ethereuem NFT",
