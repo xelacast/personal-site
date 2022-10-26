@@ -22,7 +22,7 @@ const AboutMe = () => {
     <section id="about">
       <div className={styles.container}>
         <div className={styles.heading}>
-          <h3><span>I.</span> About Me </h3>
+          <h3><span>Iw.</span> About Me </h3>
         </div>
         <div className={styles.body}>
           <div className={styles.description}>
