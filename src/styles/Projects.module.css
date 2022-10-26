@@ -64,12 +64,17 @@ h4 {
 
 .projectContent .links a {
   padding: 0 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: var(--subtitle-col);
+  transition: all 0.2s linear;
 }
 
 .projectContent .links a:first-child {
   padding-left: 0px;
+}
+
+.links > a:hover {
+  color: var(--secondodary-col)
 }
 
 .projectImage {
