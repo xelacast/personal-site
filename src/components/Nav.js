@@ -66,8 +66,9 @@ const Nav = () => {
               </li>
               <li className={styles.link}>
                 <a
-                  href="resume.pdf"
+                  href="https://docs.google.com/document/d/1jhV9Vr__4OCrTAGWowVwsyMJVtNL1JjC1gUr_p0m6No/edit?usp=sharing"
                   target="_blank"
+                  rel="noreferrer"
                   className={`${styles.resume} ${styles.button}`}
                   >
                   Resume
