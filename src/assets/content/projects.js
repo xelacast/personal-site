@@ -24,7 +24,7 @@ export const projects = [
     title: "Portfolio Website",
     description: "Every developer... every person needs a <span>portfolio website</span>. I set out on a mission to develop one with React, and CSS modules. It was my first instance of a portfolio site and it wont be my last. The portfolio is open source anyone can use this repository for themself. Design Credits go to <a href='brittanychiang.com' target='_blank'>Brittany Chang.</a>",
     image: portfolio,
-    technologies: ["Tailwind CSS","React", "Reddit API", "JavaScript", "Heroku"],
+    technologies: ["React", "CSS Modules", "JavaScript", "Azure", "Figma"],
     github: "https://github.com/alexjohn7516/personal-site",
     url: "",
     type: "left"
