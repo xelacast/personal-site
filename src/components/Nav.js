@@ -55,8 +55,13 @@ const Nav = () => {
                 </a>
               </li>
               <li className={styles.link}>
+                <a href="#experience">
+                  <span className={styles.roman}>III.</span> Experience
+                </a>
+              </li>
+              <li className={styles.link}>
                 <a href="#contact">
-                  <span className={styles.roman}>III.</span> Contact
+                  <span className={styles.roman}>IV.</span> Contact
                 </a>
               </li>
               <li className={styles.link}>
