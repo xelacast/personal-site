@@ -1,5 +1,6 @@
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
 import Hero from './components/Hero';
 import MoreProjects from './components/MoreProjects';
 import Nav from './components/Nav';
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Projects />
+        <Experience />
         <MoreProjects />
         <Contact />
         <Socials />

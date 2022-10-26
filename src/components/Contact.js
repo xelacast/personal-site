@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact">
       <div className={styles.container}>
         <div className={styles.description}>
-          <span>III. What's Next?</span>
+          <span>IV. What's Next?</span>
           <h2>Get In Touch</h2>
           <p>Feel free to send me a message if you have any
             questions tugging at your mind or if you want to
