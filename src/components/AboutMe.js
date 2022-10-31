@@ -34,7 +34,7 @@ const AboutMe = () => {
                 My main focus is to learn industry standards and project workflows
                 to build career worthy skills. I have <span>experience</span> in
                 creating <span>full stack applications</span> from the ground up
-                in the Blockchain and currently SASS space through freelance work.</p>
+                in the Blockchain and currently SAAS space through freelance work.</p>
               <p>My goal is to secure a career as a fullstack software developer
                 with an innovative company and build a personal brand in the process.
               </p>
